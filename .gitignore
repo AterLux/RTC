@@ -11,8 +11,9 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
-![Dd]ebug/*.hex
+**/[Dd]ebug/*
+!**/[Dd]ebug/*.hex
+
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -302,3 +303,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
