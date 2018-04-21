@@ -1,0 +1,56 @@
+NAME:English
+
+// Days of week (48 pixels ~= 6 capital symbols wide)
+day_mo  = MONDAY
+day_tu  = TUESDY
+day_we  = WEDNES
+day_th  = THURSD
+day_fr  = FRIDAY
+day_sa  = SATURD
+day_su  = SUNDAY
+
+
+// Menu items
+menu_lang         = Language
+menu_set_time     = Set time
+menu_set_date     = Set date
+menu_calibrate    = Clock calibrate
+menu_text_font    = Text font
+menu_digits_font  = Digits font
+menu_fx           = Visual effect
+menu_brightness_main = Brightness (main)
+menu_brightness_alt = Brightness (alt)
+menu_temp         = Crystall t° cal.
+menu_temp_koef    = Thermal koef.
+menu_fcpu         = CPU speed cal.
+
+
+prompt_save       = Save changes?
+
+font_example      = ABC,xyz.0123!
+
+// Setting date
+date_year         = Year
+date_month        = Month
+date_day          = Day
+
+// Clock calibrate
+calib_ppm         = ppm
+calib_spd         = sec/day
+
+// Thermal sensor calibration
+temp_degree       = °C
+
+// Thermal koefficient adjusting
+temp_koef_ppmpc   = ppm/°C²
+
+// CPU frequency calibration
+fcpu_khz          = kHz
+fcpu_calibration  = Calibration...
+
+
+// Information
+info_firmware     = Firmware: 
+info_firmware_date = from
+info_author       = Pogrebnyak Dmitry
+info_author2      = Russia, Samara

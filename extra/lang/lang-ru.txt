@@ -1,0 +1,54 @@
+NAME:Русский
+DEFAULT:en
+
+
+// Дни недели  (48 пикселей ~= 6 заглавных букв в ширину)
+day_mo  = ПОНЕД.
+day_tu  = ВТОРН.
+day_we  = СРЕДА
+day_th  = ЧЕТВ.
+day_fr  = ПЯТН.
+day_sa  = СУББ.
+day_su  = ВОСКР.
+
+prompt_save       = Сохранить?
+
+// Пункты меню
+menu_lang         = Язык / Language
+menu_set_time     = Установка времени
+menu_set_date     = Установка даты
+menu_calibrate    = Калибровка хода
+menu_text_font    = Шрифт текста
+menu_digits_font  = Стиль цифр
+menu_fx           = Визуальный эффект
+menu_brightness_main = Яркость (основн.)
+menu_brightness_alt = Яркость (альтер.)
+menu_temp         = Калибр.t° кристалла
+menu_temp_koef    = Темпер.коэфф.
+menu_fcpu         = Калибровка ЦП
+
+
+// Настройка даты
+date_year         = Год
+date_month        = Месяц
+date_day          = День
+
+// Калибровка хода часов
+calib_ppm         = ppm
+calib_spd         = сек/сутки
+
+// Калибровка датчика температуры 
+temp_degree       = °C
+
+// Настройка температурного коэффициента
+temp_koef_ppmpc   = ppm/°C²
+
+// Калибровка частоты ЦП
+fcpu_khz          = кГц
+fcpu_calibration  = Калибровка...
+
+// Информация
+info_firmware     = Прошивка: 
+info_firmware_date = от
+info_author       = Погребняк Дмитрий
+info_author2      = Россия, Самара
