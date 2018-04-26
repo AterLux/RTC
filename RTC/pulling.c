@@ -184,8 +184,8 @@ void on_uart_command(uint8_t l) {
       break;
     }
     case UART_COMMAND_READ_CALIBRATION: {
-      int16_t cal = rtc_get_calibration();
       uart_start_reply(UART_REPLY_READ_CALIBRATION, 2);
+      int16_t cal = rtc_get_calibration();
       uart_reply(cal);
       uart_reply(cal >> 8);
       break;

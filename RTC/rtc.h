@@ -102,6 +102,9 @@ void rtc_set_thermal_koef(uint8_t milppm_per_c2);
 /* Возвращает текущее установленное значение температурного коээфициента (в 1/100 долях /°C²) */
 uint8_t rtc_get_thermal_koef();
 
+/* Возвращает текущее вычисленное значение температурной компенсации */
+int16_t rtc_get_thermal_compenstaion();
+
 /* Возвращает текущее используемое значение компенсации */
 int16_t rtc_get_total_compensation();
 

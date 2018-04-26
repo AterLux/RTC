@@ -656,11 +656,11 @@ static void show_menu_calibrate() {
   uint8_t eq_prev = 0;
   adjuster_start();
   for(;;) {
-    int16_t secperday = ((int32_t)calibr * 3375) >> 16;
+    int16_t secperday = ((int32_t)calibr * 3375 + 32768) >> 16;
     center_num_text(0, secperday, 1, 1, &str_calib_spd, 1);
 
     text_set_limit_x(DISPLAY_WIDTH - PIX_WIDTH);
-    int16_t ppm = ((int32_t)calibr * 3906) >> 16;
+    int16_t ppm = ((int32_t)calibr * 3906  + 32768) >> 16;
     center_num_text(2, ppm, 0, 1, &str_calib_ppm, PIX_WIDTH);
     text_set_limit_x(DISPLAY_WIDTH);
     uint8_t eq = calibr == first_calibr;

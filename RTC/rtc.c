@@ -41,8 +41,8 @@ ISR(TIMER2_COMPA_vect) {
   rtc_calib_counter = rcc;
   uint8_t newcb = (rcc >> 8);
   if ((((prevcb ^ newcb) & 0x80) != 0) && ((((uint8_t)(cal >> 8) ^ newcb) & 0x80) != 0)) { // Счётчик перекинулся.
-    uint8_t c = TCNT2;
-    TCNT2 = ((cal >= 0) ? c + 1 : c - 1);
+    int8_t add = (cal >= 0) ? 1 : -1;
+    TCNT2 += add;
   }
   seconds_counter++;
   uint8_t t = rtc_second + 1;
@@ -407,6 +407,10 @@ uint8_t rtc_get_thermal_koef() {
 
 int16_t rtc_get_total_compensation() {
   return rtc_total_compensation;
+}
+
+int16_t rtc_get_thermal_compenstaion() {
+  return rtc_thermal_compensation;  
 }
 
 uint8_t days_in_month(uint8_t month, uint8_t year) {
