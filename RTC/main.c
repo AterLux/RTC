@@ -415,9 +415,12 @@ static void show_menu_set_date() {
         case _FIELD_YEAR_L:
           rtc.year = cycle_ones(rtc.year);
           break;
-        case _FIELD_MONTH: 
+        case _FIELD_MONTH: {
           if (++rtc.month > 12) rtc.month = 1;
+          uint8_t dm =  days_in_month(rtc.month, rtc.year);
+          if (rtc.day > dm) rtc.day = dm;
           break;
+        }        
         default: //_FIELD_DAY:
           rtc.day++;
           if ((rtc.day > 28) && (rtc.day > days_in_month(rtc.month, rtc.year))) rtc.day = 1;
@@ -430,6 +433,10 @@ static void show_menu_set_date() {
       blink_timer = 0;
     } else if (btn == (BUTTON_KIND_A | BUTTON_EVENT_PRESSED)) {
       if (field == _FIELD_DAY) return;
+      if (field == _FIELD_YEAR_L) {
+        uint8_t dm =  days_in_month(rtc.month, rtc.year);
+        if (rtc.day > dm) rtc.day = dm;
+      }
       field++;
       repaint_all = 1;
       blink = 1;

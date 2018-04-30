@@ -69,7 +69,7 @@ ISR(TIMER2_COMPA_vect) {
               t = 1;
             }
             rtc_month = t;
-            t = 0;
+            t = 1;
           }
         }
         rtc_day = t;
