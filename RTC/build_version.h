@@ -15,13 +15,13 @@
 // Поля, перечисленные ниже, обновляются автоматически в скрипте update_version.php.
 // Обновление происходит если дата изменения этого файла меньше, чем максимальная дата изменения других исходных файлов
 
-#define BUILD_NUMBER  173 
+#define BUILD_NUMBER  176 
 #define BUILD_YEAR    2018
 #define BUILD_MONTH   5
-#define BUILD_DAY     1
-#define BUILD_HOUR    0
-#define BUILD_MINUTE  16
-#define BUILD_SECOND  30
+#define BUILD_DAY     3
+#define BUILD_HOUR    4
+#define BUILD_MINUTE  0
+#define BUILD_SECOND  31
 
 
 
